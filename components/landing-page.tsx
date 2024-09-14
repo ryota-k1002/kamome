@@ -238,7 +238,7 @@ export function LandingPageComponent() {
                         <>
                           <p className="mb-4 whitespace-pre-line">{item.description}</p>
                           <div className="flex flex-wrap gap-4">
-                            {item.speakers.map((speaker, speakerIndex) => (
+                            {item.speakers?.map((speaker, speakerIndex) => (
                               <div key={speakerIndex} className="flex items-center bg-[#79a7b6] text-white p-2 rounded-lg">
                                 <Image
                                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kagome_symbol_circle-nXt3WkJj062REZ1jLWrRPFtFhsiiIG.png"
@@ -257,7 +257,7 @@ export function LandingPageComponent() {
                         </>
                       ) : (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                          {item.sessions.map((session, sessionIndex) => (
+                          {item.sessions?.map((session, sessionIndex) => (
                             <div key={sessionIndex} className="bg-[#f4f4f4] p-4 rounded-lg">
                               <span className="inline-block bg-[#ffde59] text-[#545454] px-3 py-1 rounded-full text-sm mb-2">
                                 {session.event}
